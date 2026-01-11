@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menu - BRO FIT Gym</title>
+    <style>
+        
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom right, #222, #555);
+        }
+
+        nav {
+            padding: 10px 0;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.75);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        h3 {
+            font-size: 18px;
+            margin: 0;
+            padding-bottom: 10px;
+            color: #00eaff;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        ul {
+            list-style: none;
+            margin: 10px 0;
+            padding: 0;
+        }
+
+        li {
+            margin: 14px 0;
+            position: relative; /* Crucial for positioning dropdown content */
+            display: inline-block; /* Aligns main buttons horizontally */
+            margin: 0 10px; /* Space between main buttons/dropdowns */
+        }
+
+        
+        nav a {
+            display: block;
+            font-size: 18px;
+            font-weight: bold;
+            color: #f5f5f5;
+            padding: 10px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+            background: rgba(255, 255, 255, 0.07);
+        }
+
+        nav a:hover {
+            color: #000;
+            background-color: #00eaff;
+            transform: scale(1.1);
+            box-shadow: 0 0 10px #00eaff, 0 0 15px #00eaff;
+        }
+
+        
+        
+        .dropdown-content {
+            display: none; /* Hidden by default */
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.9);
+            min-width: 200px;
+            z-index: 5;
+            top: 100%; /* Position below the main button */
+            left: 50%;
+            transform: translateX(-50%); /* Center the dropdown content */
+            border-radius: 10px;
+            overflow: hidden; /* Contains the rounded corners */
+            box-shadow: 0 8px 16px 0px rgba(0,0,0,0.5);
+            padding: 5px 0;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            padding: 12px 16px;
+            color: #f5f5f5;
+            font-weight: normal;
+            background: none; /* Remove background for better dropdown look */
+            border-radius: 0;
+            transform: none;
+            box-shadow: none;
+            transition: background-color 0.2s;
+        }
+        
+        /* Dropdown link hover */
+        .dropdown-content a:hover {
+            background-color: #00eaff;
+            color: #000;
+            transform: none;
+        }
+
+        /* Show the dropdown content on hover over the parent li */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h3>Dashboard</h3>
+        <ul>
+            <li><a href="page3.html" target="mid">Home</a></li><br>
+            <li><a href="login.html" target="mid">Login</a></li><br>
+<li><a href="profile.html" target="mid">My Profile</a></li>
+            
+            <li class="dropdown">
+                <a href="#" onclick="return false;">Gym Essentials</a> <div class="dropdown-content">
+                    <a href="membership.html" target="mid">Membership</a>
+                    <a href="equipment.html" target="mid">Our Equipment</a>
+<a href="training.html" target="mid">Training</a>
+                </div>
+            </li>
+            
+            
+            <li class="dropdown">
+                <a href="#" onclick="return false;">Motivation Hub</a> <div class="dropdown-content">
+                    <a href="inspiration.html" target="mid">Inspiration</a>
+                    <a href="builders.html" target="mid">Transformations</a>
+                </div>
+            </li>
+ <li class="dropdown">
+                <a href="#" onclick="return false;">Your Activity</a> <div class="dropdown-content">
+                    <a href="task.html" target="mid">Weekly Task</a>
+<a href="nutrition.html" target="mid">Nutrition</a>
+                 
+                </div>
+            </li>
+<li><a href="about.html" target="mid">About US</a></li><br>
+        </ul>
+    </nav>
+</body>
+</html>

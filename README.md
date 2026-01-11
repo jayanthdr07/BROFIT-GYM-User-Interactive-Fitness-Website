@@ -88,7 +88,7 @@ brofit-gym/
 ![Profile](profile.png)
 
 ### Training
-![Training](tarining.png)
+![Training](training.png)
 
 
 
